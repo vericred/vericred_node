@@ -1,0 +1,25 @@
+{
+  "name": "vericred",
+  "version": "0.0.1",
+  "description": "Client library to interact with the Vericred API",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/vericred/vericred_node.git"
+  },
+  "keywords": [
+    "Vericred",
+    "Provider",
+    "Data",
+    "NPI"
+  ],
+  "author": "Dan Langevin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vericred/vericred_node/issues"
+  },
+  "homepage": "https://github.com/vericred/vericred_node#readme"
+}
