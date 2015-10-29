@@ -29,6 +29,7 @@
   },
   "dependencies": {
     "promise": "^7.0.4",
+    "qs": "^5.2.0",
     "request": "^2.65.0"
   }
 }
