@@ -28,6 +28,7 @@
     "sinon": "^1.17.2"
   },
   "dependencies": {
+    "pluralize": "^1.2.1",
     "promise": "^7.0.4",
     "qs": "^5.2.0",
     "request": "^2.65.0"
