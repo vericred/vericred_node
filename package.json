@@ -4,7 +4,7 @@
   "description": "Client library to interact with the Vericred API",
   "main": "index.js",
   "scripts": {
-    "test": "mocha spec --require spec/helpers/spec_helper.js --reporter spec"
+    "test": "mocha spec/* --require spec/helpers/spec_helper.js --reporter spec"
   },
   "repository": {
     "type": "git",
