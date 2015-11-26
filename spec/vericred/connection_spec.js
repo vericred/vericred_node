@@ -17,11 +17,11 @@ describe('Connection', function () {
 
     it('proxies calls to the HTTP library', function () {
       var qs = { providers: [{ npi: 1 }, { npi: 2 }] }
-      return connection.get('/foo/bar', { baz: 'qux' })
+      return connection.get('/foo/bar', { baz: [{ id :'qux' }] })
         .then(function () {
           var called = request.calledWith(
             {
-              uri: 'https://api.vericred.com/foo/bar?baz=qux',
+              uri: 'https://api.vericred.com/foo/bar?baz%5B0%5D%5Bid%5D=qux',
               headers: {
                 'Vericred-Api-Key': Vericred.config.apiKey
               }
