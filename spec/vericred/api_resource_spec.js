@@ -22,7 +22,7 @@ describe('ApiResource', function () {
 
     it('finds the correct resource', function () {
       return Subclass.find(1).then(function (resource) {
-        var called = ApiResource.connection.get.calledWith('subclasses/1');
+        var called = ApiResource.connection.get.calledWith('/subclasses/1');
         expect(called).to.eql(true);
         expect(resource.fooBar).to.eql('baz');
       });
@@ -56,7 +56,7 @@ describe('ApiResource', function () {
         .then(function (resources) {
           var called =
             ApiResource.connection.get
-              .calledWith('subclasses', { foo: 'bar' });
+              .calledWith('/subclasses/', { foo: 'bar' });
           expect(called).to.eql(true);
           expect(resources.length).to.eql(2);
           expect(resources[0].fooBar).to.eql('baz');
