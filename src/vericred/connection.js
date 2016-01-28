@@ -1,4 +1,4 @@
-var Promise = require('promise');
+var Promise = require('require-promise');
 var qs = require('qs');
 var util = require('util');
 
