@@ -23,14 +23,23 @@
   },
   "homepage": "https://github.com/vericred/vericred_node#readme",
   "devDependencies": {
+    "babelify": "^7.2.0",
+    "browserify": "^13.0.0",
     "chai": "^3.4.0",
+    "gulp": "^3.9.0",
+    "gulp-livereload": "^3.8.1",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^1.5.1",
     "mocha": "^2.3.3",
-    "sinon": "^1.17.2"
+    "sinon": "^1.17.2",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0"
   },
   "dependencies": {
+    "browser-request": "^0.3.3",
     "inflected": "^1.1.6",
     "promise": "^7.0.4",
     "qs": "^5.2.0",
-    "request": "^2.65.0"
+    "request": "^2.69.0"
   }
 }

@@ -3,9 +3,9 @@
 var ApiResource = require('./vericred/api_resource');
 var Resources = require('./vericred/resources');
 var config = require('./vericred/config');
-config.requestLib = require('request');
+config.requestLib = require('browser-request');
 
-module.exports = {
+window.Vericred = {
   config: config,
   County: Resources.County,
   Plan: Resources.Plan,
@@ -13,4 +13,4 @@ module.exports = {
   State: Resources.State,
   ZipCode: Resources.ZipCode,
   ZipCounty: Resources.ZipCounty
-};
+}

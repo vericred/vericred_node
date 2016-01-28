@@ -1,34 +1,34 @@
-'use strict';
-
 var Promise = require('promise');
 var qs = require('qs');
 var util = require('util');
 
 var config = require('../vericred/config');
 
-var Connection = function Connection(requestLib) {
+var Connection = function (requestLib) {
   this.request = requestLib || Vericred.config.requestLib;
 };
 
 Connection.prototype = {
-  buildQueryString: function buildQueryString(obj) {
+  buildQueryString: function (obj) {
     return qs.stringify(obj);
   },
-  buildUrl: function buildUrl(path, query) {
-    return config.baseUrl + path + '?' + this.buildQueryString(query || {});
+  buildUrl: function(path, query) {
+    return config.baseUrl +
+      path + '?' +
+      this.buildQueryString(query || {});
   },
-  defaultHeaders: function defaultHeaders() {
+  defaultHeaders: function () {
     return {
-      'Vericred-Api-Key': config.apiKey
+      'Vericred-Api-Key' : config.apiKey
     };
   },
-  get: function get(path, query) {
+  get: function (path, query) {
     return this.makeRequest({
       uri: this.buildUrl(path, query),
       headers: this.defaultHeaders()
     });
   },
-  makeRequest: function makeRequest(opts) {
+  makeRequest: function (opts) {
     var _this = this;
     return new Promise(function (resolve, reject) {
       _this.request(opts, function (error, res, body) {
@@ -42,6 +42,6 @@ Connection.prototype = {
       });
     });
   }
-};
+}
 
 module.exports = Connection;

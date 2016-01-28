@@ -1,0 +1,29 @@
+{
+  "name": "vericred",
+  "description": "Client library to interact with the Vericred API",
+  "main": "dist/vericred.js",
+  "authors": [
+    "Dan Langevin"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "Vericred",
+    "Provider",
+    "Data",
+    "NPI"
+  ],
+  "homepage": "https://github.com/vericred/vericred_node",
+  "moduleType": [
+    "globals"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "spec",
+    "src",
+    "spec_src"
+  ]
+}
