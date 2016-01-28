@@ -5,7 +5,7 @@ var Resources = require('./vericred/resources');
 var config = require('./vericred/config');
 config.requestLib = require('request');
 
-module.exports = {
+var Vericred = {
   config: config,
   County: Resources.County,
   Plan: Resources.Plan,
@@ -13,4 +13,6 @@ module.exports = {
   State: Resources.State,
   ZipCode: Resources.ZipCode,
   ZipCounty: Resources.ZipCounty
-};
+}
+
+module.exports = Vericred;
